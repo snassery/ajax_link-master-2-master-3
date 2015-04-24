@@ -1,0 +1,9 @@
+name = "Ajax Link Test"
+description = "A simple Ajax link example"
+core = 7.x
+dependencies[] = ctools
+version = 7.x-1.0
+
+
+regions[left_side_rail]     = 'Left side-rail'
+scripts[] = ajax_link.js

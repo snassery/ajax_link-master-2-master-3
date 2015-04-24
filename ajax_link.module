@@ -1,0 +1,28 @@
+<?php
+
+/* 
+* Implements hook_ctools_plugin_directory -
+* This lets ctools know to scan my module for a content_type plugin file
+* Detailed docks in ctools/ctools.api.php 
+*/ 
+function ajax_link_ctools_plugin_directory($owner, $plugin_type) {
+  // we'll be nice and limit scandir() calls
+  if ($owner == 'ctools' && $plugin_type == 'content_types') {
+    return 'plugins/content_types';
+  }
+}
+
+/**
+ * Implements hook_menu().
+ *a/
+function ajax_link_menu() {
+  $items = array();
+global $user;
+  echo "Last login: ".format_date($user->login,'small');
+
+/**
+ * Callback function that displays a simple Ajax powered link.
+ 
+   }
+}
+}
