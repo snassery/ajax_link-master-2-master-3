@@ -52,6 +52,6 @@ global $user;
     // return render arrays. If returning an Ajax commands array, it must be
     // encapsulated in a render array structure.
    
-  }
+  
 }
 }
