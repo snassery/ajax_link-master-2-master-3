@@ -22,7 +22,36 @@ global $user;
 
 /**
  * Callback function that displays a simple Ajax powered link.
+ */
+function ajax_link_page() {
+  return array(
+    
+
+/**
+ * Implements hook_menu().
+ *a/
+function ajax_link_menu() {
+  $items = array();
+global $user;
+  echo "Last login: ".format_date($user->login,'small');
+
+/**
+ * Callback function that displays a simple Ajax powered link.
  
    }
+}
+}
+      ),
+    );
+}
+
+/**
+ * Ajax callback to display the current time.
+ */ 
+    // Menu 'page callback' and #ajax['callback'] functions are supposed to
+    // return render arrays. If returning an Ajax commands array, it must be
+    // encapsulated in a render array structure.
+   
+  }
 }
 }
